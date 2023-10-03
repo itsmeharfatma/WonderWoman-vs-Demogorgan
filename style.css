@@ -17,9 +17,30 @@ body {
 
 .gameOver {
     visibility: hidden;
+    position: relative;
+    top: 40vh;
+    font-size: 80px;
+    font-weight: bold;
+    font-family: sans-serif;
+    text-align: center;
+    color: white;
 }
 
-.ww {
+#scoreCont {
+    position: absolute;
+    right: 60px;
+    top: 60px;
+    border: 1px solid white;
+    border-radius: 8px;
+    color: white;
+    padding: 12px;
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    
+}
+
+.wonderWoman {
     background-image: url(assets/Wonderwoman.webp);
     background-repeat: no-repeat;
     background-size: cover;
@@ -41,15 +62,15 @@ body {
     left: 60vw;
 }
 
-.animateWw {
-    animation: ww 0.6s linear;
+.animateWonderWoman {
+    animation: wonderWoman 0.6s linear;
 }
 
 .animateGorgan {
     animation: animateGorgan 5s linear infinite;
 }
 
-@keyframes ww {
+@keyframes wonderWoman {
     0% {
         bottom: 0;
     }
