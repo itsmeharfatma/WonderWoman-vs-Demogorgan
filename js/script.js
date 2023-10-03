@@ -1,6 +1,7 @@
 score = 0;
 cross = true;
 
+// keyevents
 document.addEventListener("keydown", (e) => {
     console.log(e.key);
     if (e.key === "ArrowUp") {
@@ -22,7 +23,7 @@ document.addEventListener("keydown", (e) => {
     }
 });
 
-// colision detection
+// collision detection
 setInterval(() => {
     wonderWoman = document.querySelector(".wonderWoman");
     gorgan = document.querySelector(".gorgan");
